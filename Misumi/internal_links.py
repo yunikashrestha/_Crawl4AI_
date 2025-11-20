@@ -5,7 +5,7 @@ import uuid
 
 async def internal_links_extraction():
     
-    browser_config = BrowserConfig(headless=True)
+    browser_config = BrowserConfig(headless=False)
     session_id = str(uuid.uuid4())
 
     config_run = CrawlerRunConfig(
@@ -25,7 +25,7 @@ async def internal_links_extraction():
         mean_delay=2.0,
         max_range=6.0,
         semaphore_count=5,
-        scan_full_page=False,
+        scan_full_page=True,
         scroll_delay=1.5,
         max_scroll_steps=3,
         process_iframes=True,
@@ -63,7 +63,7 @@ async def internal_links_extraction():
                     internal_links.append(url)
                     
                     # Write URL to file
-                    with open("misumi_camFollower.txt", "a", encoding="utf-8") as f:
+                    with open("misumi.txt", "a", encoding="utf-8") as f:
                         f.write(url + "\n")
             print(f"Saved {len(internal_links)} products url")
             return internal_links

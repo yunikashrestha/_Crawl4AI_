@@ -1,0 +1,15 @@
+Query: list all the sub-categories of camFollower 
+ Time of response: 2.9080076000027475
+
+Query: cam follower flat hex socket 
+ Time of response: 1.0835100999975111
+
+Query: cam follower flat hex socket 
+ Time of response: 5.742992699997558
+
+Query: C-CFMRS3-10 
+ Time of response: 3.274583699996583
+
+Query: cam follower flat hex socket 
+ Time of response: 145.24200500000006
+

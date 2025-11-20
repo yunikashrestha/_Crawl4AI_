@@ -1,7 +1,7 @@
 from fastembed import TextEmbedding,SparseTextEmbedding,LateInteractionTextEmbedding
 from qdrant_client import QdrantClient,models
 client=QdrantClient(url="http://localhost:6333")
-collection_name="Misumi parts"
+collection_name="camFollower"
 dense_encoder=TextEmbedding("sentence-transformers/all-MiniLM-L6-v2")
 sparse_encoder=SparseTextEmbedding("Qdrant/bm25")
 lateInteraction=LateInteractionTextEmbedding("colbert-ir/colbertv2.0")
@@ -41,7 +41,7 @@ def retrieval(query):
 
 if __name__=="__main__":
      print("The retrived part numbers are:")
-     points =retrieval(query = "cam follower crown hex socket Width=7 ")
+     points =retrieval(query = "cam followercf type ")
      for point in points:
         print(f"{point}\n\n")
     
