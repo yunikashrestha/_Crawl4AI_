@@ -13,3 +13,12 @@ Query: C-CFMRS3-10
 Query: cam follower flat hex socket 
  Time of response: 145.24200500000006
 
+Query: camFollower flat hex socket 
+ Time of response: 6.341338700032793
+
+Query: compare the price of camfollower flat hex socket and crown hex socket 
+ Time of response: 7.583677200018428
+
+Query:  CFNR5-13 
+ Time of response: 8.002274199970998
+
