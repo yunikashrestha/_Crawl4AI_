@@ -3,7 +3,7 @@ import uuid
 import asyncio
 from bs4 import BeautifulSoup
 
-async def pagination_for_vt(url):
+async def pagination_for_mitshubishi(url):
     session_id=str(uuid.uuid4())
     brow_config=BrowserConfig(headless=False,verbose=True,viewport_height=1400,viewport_width=1000)
     run_config=CrawlerRunConfig(
@@ -53,4 +53,4 @@ async def pagination_for_vt(url):
 
 if __name__=="__main__":
     target_url="https://www.mitsubishielectric.co.jp/fa/products/faspec/search.page?kisyu=/servo&page=1&search=B&word=%E5%9B%9E%E8%BB%A2%E5%9E%8B%E3%82%B5%E3%83%BC%E3%83%9C%E3%83%A2%E3%83%BC%E3%82%BF&K-09=MELSERVO-J5"
-    asyncio.run(pagination_for_vt(url=target_url))
+    asyncio.run(pagination_for_mitshubishi(url=target_url))
